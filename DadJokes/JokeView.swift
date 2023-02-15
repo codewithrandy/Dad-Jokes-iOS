@@ -61,7 +61,7 @@ struct JokeView: View {
     }
     
     func getJokesApi() async {
-        guard let url = URL(string: "https://dadjokes.randymckown.com/dadjokes/") else {
+        guard let url = URL(string: "URL_TO_YOUR_API_GOES_HERE") else {
             print("bad url")
             return
         }

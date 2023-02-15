@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256845BF299DA8AF0025FB48 /* dad-jokes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 256845BE299DA8AF0025FB48 /* dad-jokes.gif */; };
 		25C5962D299AC552006B842E /* DadJokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C5962C299AC552006B842E /* DadJokesApp.swift */; };
 		25C5962F299AC552006B842E /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C5962E299AC552006B842E /* JokeView.swift */; };
 		25C59631299AC553006B842E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C59630299AC553006B842E /* Assets.xcassets */; };
@@ -14,10 +15,10 @@
 		25EB36F3299C798D007B13CD /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB36F2299C798D007B13CD /* Joke.swift */; };
 		25EB36F7299C81A6007B13CD /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB36F6299C81A6007B13CD /* WaveView.swift */; };
 		25EB36F9299C81D2007B13CD /* SliderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB36F8299C81D2007B13CD /* SliderData.swift */; };
-		25EB36FE299C93B2007B13CD /* dad-jokes-feat.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EB36FD299C93B2007B13CD /* dad-jokes-feat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		256845BE299DA8AF0025FB48 /* dad-jokes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "dad-jokes.gif"; sourceTree = "<group>"; };
 		25C59629299AC552006B842E /* DadJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DadJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C5962C299AC552006B842E /* DadJokesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesApp.swift; sourceTree = "<group>"; };
 		25C5962E299AC552006B842E /* JokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeView.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		25EB36F2299C798D007B13CD /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		25EB36F6299C81A6007B13CD /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		25EB36F8299C81D2007B13CD /* SliderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderData.swift; sourceTree = "<group>"; };
-		25EB36FD299C93B2007B13CD /* dad-jokes-feat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dad-jokes-feat.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 		25EB36FC299C9373007B13CD /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				25EB36FD299C93B2007B13CD /* dad-jokes-feat.png */,
+				256845BE299DA8AF0025FB48 /* dad-jokes.gif */,
 			);
 			path = Screenshots;
 			sourceTree = "<group>";
@@ -149,7 +149,7 @@
 			files = (
 				25C59634299AC553006B842E /* Preview Assets.xcassets in Resources */,
 				25C59631299AC553006B842E /* Assets.xcassets in Resources */,
-				25EB36FE299C93B2007B13CD /* dad-jokes-feat.png in Resources */,
+				256845BF299DA8AF0025FB48 /* dad-jokes.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
