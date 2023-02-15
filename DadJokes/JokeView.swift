@@ -12,7 +12,8 @@ struct JokeView: View {
     @State var leftData = SliderData(side: .left)
     @State var rightData = SliderData(side: .right)
     
-    @State var pageIndex = 0
+    @State var colorIndex = 0
+    @State var jokeIndex = 0
     @State var topSlider = SliderDirection.right
     @State var sliderOffset: CGFloat = 0
     
@@ -39,14 +40,14 @@ struct JokeView: View {
     
     func content() -> some View {
         return  ZStack {
-            Rectangle().foregroundColor(Config.colors[pageIndex])
+            Rectangle().foregroundColor(Config.colors[colorIndex])
             VStack {
                 Spacer()
                 VStack {
-                    Text(jokes[pageIndex].setup)
+                    Text(jokes[jokeIndex].setup)
                         .font(.largeTitle)
                         .padding()
-                    Text(jokes[pageIndex].punchline)
+                    Text(jokes[jokeIndex].punchline)
                         .font(.title)
                 }
                 .fontWeight(.bold)
@@ -99,13 +100,22 @@ struct JokeView: View {
         }
     }
     
-    private func index(of data: SliderData) -> Int {
+    private func setColorIndex(of data: SliderData) -> Int {
         let last = Config.colors.count - 1
         if data.side == .left {
-            return pageIndex == 0 ? last : pageIndex - 1
+            return colorIndex == 0 ? last : colorIndex - 1
             
         } else {
-            return pageIndex == last ? 0 : pageIndex + 1
+            return colorIndex == last ? 0 : colorIndex + 1
+        }
+    }
+    
+    private func setJokeIndex(of data: SliderData) -> Int {
+        let lastJoke = jokes.count - 1
+        if data.side == .left {
+            return jokeIndex == 0 ? lastJoke : jokeIndex - 1
+        } else {
+            return jokeIndex == lastJoke ? 0 : jokeIndex + 1
         }
     }
     
@@ -114,7 +124,8 @@ struct JokeView: View {
             data.wrappedValue = data.wrappedValue.final()
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            self.pageIndex = self.index(of: data.wrappedValue)
+            self.colorIndex = self.setColorIndex(of: data.wrappedValue)
+            self.jokeIndex = self.setJokeIndex(of: data.wrappedValue)
             self.leftData = self.leftData.initial()
             self.rightData = self.rightData.initial()
             
@@ -144,7 +155,7 @@ struct JokeView: View {
             self.swipe(data: data)
         })
         return WaveView(data: data.wrappedValue).gesture(gesture)
-            .foregroundColor(Config.colors[index(of: data.wrappedValue)])
+            .foregroundColor(Config.colors[setColorIndex(of: data.wrappedValue)])
     }
     
     private func circle(radius: Double) -> Path {
