@@ -53,32 +53,8 @@ struct JokeView: View {
                 .fontWeight(.bold)
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
+                
                 Spacer()
-                HStack {
-                    Button {
-                        showingMenu.toggle()
-                    } label: {
-                        Image(systemName: "slider.horizontal.3")
-                            .scaleEffect(2)
-                            .foregroundColor(.white)
-                    }
-                    .padding(20)
-                    .sheet(isPresented: $showingMenu) {
-                        CategoryView()
-                    }
-                    
-                    Button {
-                        showingMenu.toggle()
-                    } label: {
-                        Image(systemName: "square.grid.3x3.fill")
-                            .scaleEffect(2)
-                            .foregroundColor(.white)
-                    }
-                    .padding(20)
-                    .sheet(isPresented: $showingMenu) {
-                        CategoryView()
-                    }
-                }
             }
             .padding(30)
         }

@@ -14,7 +14,6 @@
 		25EB36F3299C798D007B13CD /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB36F2299C798D007B13CD /* Joke.swift */; };
 		25EB36F7299C81A6007B13CD /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB36F6299C81A6007B13CD /* WaveView.swift */; };
 		25EB36F9299C81D2007B13CD /* SliderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB36F8299C81D2007B13CD /* SliderData.swift */; };
-		25EB36FB299C825B007B13CD /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB36FA299C825B007B13CD /* CategoryView.swift */; };
 		25EB36FE299C93B2007B13CD /* dad-jokes-feat.png in Resources */ = {isa = PBXBuildFile; fileRef = 25EB36FD299C93B2007B13CD /* dad-jokes-feat.png */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		25EB36F2299C798D007B13CD /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
 		25EB36F6299C81A6007B13CD /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
 		25EB36F8299C81D2007B13CD /* SliderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderData.swift; sourceTree = "<group>"; };
-		25EB36FA299C825B007B13CD /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		25EB36FD299C93B2007B13CD /* dad-jokes-feat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dad-jokes-feat.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +69,6 @@
 				25EB36F2299C798D007B13CD /* Joke.swift */,
 				25EB36F6299C81A6007B13CD /* WaveView.swift */,
 				25EB36F8299C81D2007B13CD /* SliderData.swift */,
-				25EB36FA299C825B007B13CD /* CategoryView.swift */,
 			);
 			path = DadJokes;
 			sourceTree = "<group>";
@@ -165,7 +162,6 @@
 			files = (
 				25C5962F299AC552006B842E /* JokeView.swift in Sources */,
 				25C5962D299AC552006B842E /* DadJokesApp.swift in Sources */,
-				25EB36FB299C825B007B13CD /* CategoryView.swift in Sources */,
 				25EB36F9299C81D2007B13CD /* SliderData.swift in Sources */,
 				25EB36F3299C798D007B13CD /* Joke.swift in Sources */,
 				25EB36F7299C81A6007B13CD /* WaveView.swift in Sources */,
