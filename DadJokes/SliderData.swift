@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct Config {
-    static let leftWaveY = 100.0
-    static let rightWaveY = 300.0
+    static let leftWaveY = 200.0
+    static let rightWaveY = (SliderData.screenHeight - 200.0)
     static let buttonRadius = 24.0
     static let buttonMargin = 8.0
     static let arrowWidth = 4.0

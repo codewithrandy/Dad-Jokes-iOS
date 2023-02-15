@@ -69,6 +69,7 @@ struct JokeView: View {
             let (data, _) = try await URLSession.shared.data(from: url)
             if let decodedResponse = try? JSONDecoder().decode([Joke].self, from: data) {
                 jokes = decodedResponse
+                jokes.shuffle()
             }
             jokesLoaded = true
         } catch {
