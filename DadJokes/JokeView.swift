@@ -18,12 +18,12 @@ struct JokeView: View {
     @State var sliderOffset: CGFloat = 0
     
     @State var jokes = [Joke]()
-    @State var datafetched = false
+    @State var jokesLoaded = false
         
     
     var body: some View {
         NavigationStack {
-            if datafetched {
+            if jokesLoaded {
                 ZStack {
                     content()
                     slider(data: $leftData)
@@ -33,7 +33,7 @@ struct JokeView: View {
             }
         }
         .task {
-            await fetchData()
+            await getJokesApi()
         }
     }
     
@@ -84,7 +84,7 @@ struct JokeView: View {
         }
     }
     
-    func fetchData() async {
+    func getJokesApi() async {
         guard let url = URL(string: "https://dadjokes.randymckown.com/dadjokes/") else {
             print("bad url")
             return
@@ -94,7 +94,7 @@ struct JokeView: View {
             if let decodedResponse = try? JSONDecoder().decode([Joke].self, from: data) {
                 jokes = decodedResponse
             }
-            datafetched = true
+            jokesLoaded = true
         } catch {
             print("Failed to fetch dad jokes")
         }
