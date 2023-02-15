@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		25C5962D299AC552006B842E /* DadJokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C5962C299AC552006B842E /* DadJokesApp.swift */; };
-		25C5962F299AC552006B842E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C5962E299AC552006B842E /* ContentView.swift */; };
+		25C5962F299AC552006B842E /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C5962E299AC552006B842E /* JokeView.swift */; };
 		25C59631299AC553006B842E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C59630299AC553006B842E /* Assets.xcassets */; };
 		25C59634299AC553006B842E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C59633299AC553006B842E /* Preview Assets.xcassets */; };
+		25EB36F3299C798D007B13CD /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB36F2299C798D007B13CD /* Joke.swift */; };
+		25EB36F7299C81A6007B13CD /* WaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB36F6299C81A6007B13CD /* WaveView.swift */; };
+		25EB36F9299C81D2007B13CD /* SliderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB36F8299C81D2007B13CD /* SliderData.swift */; };
+		25EB36FB299C825B007B13CD /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EB36FA299C825B007B13CD /* CategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		25C59629299AC552006B842E /* DadJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DadJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C5962C299AC552006B842E /* DadJokesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadJokesApp.swift; sourceTree = "<group>"; };
-		25C5962E299AC552006B842E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		25C5962E299AC552006B842E /* JokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeView.swift; sourceTree = "<group>"; };
 		25C59630299AC553006B842E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25C59633299AC553006B842E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25C5963A299AC60F006B842E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		25EB36F2299C798D007B13CD /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		25EB36F6299C81A6007B13CD /* WaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveView.swift; sourceTree = "<group>"; };
+		25EB36F8299C81D2007B13CD /* SliderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderData.swift; sourceTree = "<group>"; };
+		25EB36FA299C825B007B13CD /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,7 @@
 		25C59620299AC552006B842E = {
 			isa = PBXGroup;
 			children = (
+				25C5963A299AC60F006B842E /* README.md */,
 				25C5962B299AC552006B842E /* DadJokes */,
 				25C5962A299AC552006B842E /* Products */,
 			);
@@ -52,9 +62,13 @@
 			isa = PBXGroup;
 			children = (
 				25C5962C299AC552006B842E /* DadJokesApp.swift */,
-				25C5962E299AC552006B842E /* ContentView.swift */,
+				25C5962E299AC552006B842E /* JokeView.swift */,
 				25C59630299AC553006B842E /* Assets.xcassets */,
 				25C59632299AC553006B842E /* Preview Content */,
+				25EB36F2299C798D007B13CD /* Joke.swift */,
+				25EB36F6299C81A6007B13CD /* WaveView.swift */,
+				25EB36F8299C81D2007B13CD /* SliderData.swift */,
+				25EB36FA299C825B007B13CD /* CategoryView.swift */,
 			);
 			path = DadJokes;
 			sourceTree = "<group>";
@@ -137,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25C5962F299AC552006B842E /* ContentView.swift in Sources */,
+				25C5962F299AC552006B842E /* JokeView.swift in Sources */,
 				25C5962D299AC552006B842E /* DadJokesApp.swift in Sources */,
+				25EB36FB299C825B007B13CD /* CategoryView.swift in Sources */,
+				25EB36F9299C81D2007B13CD /* SliderData.swift in Sources */,
+				25EB36F3299C798D007B13CD /* Joke.swift in Sources */,
+				25EB36F7299C81A6007B13CD /* WaveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
